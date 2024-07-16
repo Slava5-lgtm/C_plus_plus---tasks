@@ -24,12 +24,19 @@ int main() {
     std::cout << "Расчетом стоимости товара !\n";
 
     int productCost;                                                    // Стоимость товара
-    int deliveryCost = 350;                                                   // Стоимость доставки
-    int discount = 700;                                                       // Скидка
+    int deliveryCost;                                                   // Стоимость доставки
+    int discount;                                                       // Скидка
 
 
     std::cout << "Введи стоимость товара: ";                                               
     std::cin >> productCost;
+
+    std::cout << "Введи стоимость доставки: ";                                               
+    std::cin >> deliveryCost;
+
+    std::cout << "Какая скидка на даный товар: ";                                               
+    std::cin >> discount;
+        
     int price = productCost + deliveryCost - discount;
     std::cout << "Итого: " << price << "\n";
 }
